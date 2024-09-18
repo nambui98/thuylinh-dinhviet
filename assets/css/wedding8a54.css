@@ -1,6 +1,6 @@
 .blur-bg {
-	-webkit-backdrop-filter: blur(5px);
-  	backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 #audio {
@@ -9,11 +9,13 @@
 
 }
 
- /* AUDIO */
+/* AUDIO */
 
- #audio {display:none}
+#audio {
+    display: none
+}
 
- .toggleAudio {
+.toggleAudio {
 
     position: fixed;
 
@@ -37,9 +39,11 @@
 
     cursor: pointer;
 
-    }
+}
 
-    .toggleAudio i {color:white;}
+.toggleAudio i {
+    color: white;
+}
 
 .section-des {
 
@@ -71,11 +75,11 @@
 
 }
 
- /* TIN NHẮN */
+/* TIN NHẮN */
 
 
 
- .input-group {
+.input-group {
 
     display: flex;
 
@@ -131,7 +135,7 @@
 
 .message-container {
 
-    
+
 
     display: grid;
 
@@ -159,7 +163,7 @@
 
     overflow-y: auto;
 
-   max-height: 500px;
+    max-height: 500px;
 
 }
 
@@ -191,7 +195,7 @@
 
 }
 
-.list_message::-webkit-scrollbar-thumb:hover{
+.list_message::-webkit-scrollbar-thumb:hover {
 
     background-color: var(--primary-color);
 
@@ -243,7 +247,7 @@
 
     display: grid;
 
-    padding: clamp(20px , 20px + 1vw , 40px);
+    padding: clamp(20px, 20px + 1vw, 40px);
 
     justify-items: center;
 
@@ -293,14 +297,13 @@
 
     padding: 80px 0;
 
-    
+
 
 }
 
 .form .section-title {
 
-  color: var(--primary-color)
-
+    color: var(--primary-color)
 }
 
 #form-wedding {
@@ -323,7 +326,7 @@
 
     background-size: cover;
 
-    border-radius:12px;
+    border-radius: 12px;
 
 }
 
@@ -353,8 +356,7 @@
 
     justify-content: center;
 
-    max-width:90%
-
+    max-width: 90%
 }
 
 .radio-container {
@@ -367,7 +369,7 @@
 
 .radio-container .tooltip {
 
-  position: absolute;
+    position: absolute;
 
     top: -32px;
 
@@ -385,11 +387,11 @@
 
     display: none;
 
-    opacity:0;
+    opacity: 0;
 
-    transition:.3s all;
+    transition: .3s all;
 
-    padding:4px 8px;
+    padding: 4px 8px;
 
     box-shadow: 0 0 20px rgba(0 0 0 /10%);
 
@@ -397,15 +399,15 @@
 
 .radio-container:hover .tooltip {
 
-  display:block;
+    display: block;
 
-  opacity:1;
+    opacity: 1;
 
 }
 
 .radio-container {
 
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -465,7 +467,7 @@
 
 }
 
-.radio-container input:checked ~ .checkmark::before {
+.radio-container input:checked~.checkmark::before {
 
     display: block;
 
@@ -515,9 +517,9 @@ textarea {
 
     padding: 20px;
 
-    max-width:90%;
+    max-width: 90%;
 
-    margin:0 auto;
+    margin: 0 auto;
 
 }
 
@@ -579,7 +581,7 @@ select {
 
     cursor: pointer;
 
-    border-radius:8px;
+    border-radius: 8px;
 
 }
 
@@ -613,17 +615,11 @@ select {
 
     padding: 80px 0;
 
-    background-image: linear-gradient(
+    background-image: linear-gradient(to top,
 
-        to top,
+            var(--bg),
 
-        var(--bg),
-
-        #fff
-
-
-
-    );
+            #fff);
 
     display: grid;
 
@@ -646,6 +642,12 @@ select {
 }
 
 #box-gift {
+
+    display: none;
+
+}
+
+#box-gift2 {
 
     display: none;
 
@@ -685,11 +687,12 @@ select {
 
 .gift-qr {
 
-   max-width: 300px;
+    max-width: 300px;
 
 }
 
-.gift-body .groom_name, .gift-body .bride_name {
+.gift-body .groom_name,
+.gift-body .bride_name {
 
     font-family: var(--title-font);
 
@@ -706,27 +709,24 @@ select {
     padding: 80px 0;
 
     background: var(--bg)
-
 }
 
 #video .section-title {
 
-    text-align:center;
+    text-align: center;
 
     color: var(--primary-color)
-
 }
 
 #video .subtitle {
 
-    text-align:center;
+    text-align: center;
 
 }
 
 .video-container {
 
-    margin-top:40px
-
+    margin-top: 40px
 }
 
 
@@ -766,6 +766,7 @@ select {
     box-shadow: inset 9999px 9999px rgba(0, 0, 0, 0.519);
     color: wheat;
 }
+
 .dress-code-container {
     padding: 40px;
     border-radius: 12px;
@@ -777,6 +778,7 @@ select {
     margin-bottom: 40px;
     color: wheat;
 }
+
 .dress-code-color {
     position: relative;
     margin-top: 20px;
@@ -788,28 +790,33 @@ select {
     min-width: 250px;
     justify-content: center;
 }
+
 .dress-for {
     position: absolute;
-    top:0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--primary-color);
     padding: 0 10px;
     box-shadow: inset 9999px 9999px rgba(0, 0, 0, 0.519);
 }
-.dress-color-item{
+
+.dress-color-item {
     width: 40px;
     height: 40px;
     border: 2px solid wheat;
     border-radius: 50%;
 }
+
 .dress-code-img img {
     max-width: 120px;
     margin-bottom: 20px;
 }
+
 .dresscode .section-title {
     color: var(--text-white);
 }
+
 .dress-container {
     margin-top: 60px;
     display: flex;
@@ -820,6 +827,7 @@ select {
     position: relative;
     z-index: 9;
 }
+
 .dress-container::before {
     content: "";
     width: 2px;
@@ -829,30 +837,34 @@ select {
     border-radius: 999px;
     z-index: -1;
 }
+
 .dress-item {
     display: grid;
     grid-template-columns: 3fr 30px 3fr;
     gap: 30px;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
+
 .dress-content {
     order: 0;
     text-align: right;
-   box-sizing: border-box;
-   word-wrap: break-word;
+    box-sizing: border-box;
+    word-wrap: break-word;
 
 }
+
 .dress-content p {
     max-width: 126px;
     font-size: 15px;
 }
+
 .dress-media {
     order: 3;
 }
-.dress-content {
-   
-}
+
+.dress-content {}
+
 .dress-item::before {
     content: "";
     width: 24px;
@@ -862,16 +874,18 @@ select {
     order: 2;
     margin: 0 auto;
 }
+
 .dress-media img {
-max-width: 100px;
-aspect-ratio: 1/1;
+    max-width: 100px;
+    aspect-ratio: 1/1;
 }
+
 .dress-time {
-    font-size: clamp(16px , 16px + 1vw , 20px);
+    font-size: clamp(16px, 16px + 1vw, 20px);
     font-family: var(--title-font);
 }
 
-@media ( min-width: 768px) {
+@media (min-width: 768px) {
     .dress-container::before {
         content: "";
         width: 100%;
@@ -883,13 +897,15 @@ aspect-ratio: 1/1;
         z-index: -1;
         opacity: .8;
         top: 50%;
-        
+
     }
+
     .dress-container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .dress-item {
         display: grid;
         grid-template-columns: none;
@@ -898,14 +914,17 @@ aspect-ratio: 1/1;
         align-items: center;
         justify-items: center;
     }
+
     .dress-content {
         text-align: center;
     }
-    
+
 }
+
 .section-countdown {
-	padding: 120px 0;
+    padding: 120px 0;
 }
+
 /* footer */
 
 footer {
